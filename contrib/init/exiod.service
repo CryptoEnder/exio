@@ -1,0 +1,26 @@
+[Unit]
+Description=EXO's distributed currency daemon
+After=network.target
+
+[Service]
+User=exio
+Group=exio
+
+Type=forking
+PIDFile=/var/lib/exiod/exiod.pid
+
+ExecStart=/usr/bin/exiod -daemon -pid=/var/lib/exiod/exiod.pid \
+          -conf=/etc/exio/exio.conf -datadir=/var/lib/exiod
+
+ExecStop=-/usr/bin/exio-cli -conf=/etc/exio/exio.conf \
+         -datadir=/var/lib/exiod stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

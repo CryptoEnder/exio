@@ -1,1 +1,2 @@
-# exio
+Exio Currency Repository
+=====================================

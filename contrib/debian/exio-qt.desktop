@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=EXO
+Comment=EXO P2P Cryptocurrency
+Comment[fr]=EXO, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=EXO, eşten eşe kriptografik sanal para birimi
+Exec=exio-qt %u
+Terminal=false
+Type=Application
+Icon=exio128
+MimeType=x-scheme-handler/exio;
+Categories=Office;Finance;

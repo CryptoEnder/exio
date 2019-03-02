@@ -1,0 +1,26 @@
+# /etc/conf.d/exiod: config file for /etc/init.d/exiod
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/exio/exio.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/exiod"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/exiod.pid"
+
+# Where to write exiod data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/exiod"
+
+# User and group to own exiod process
+#BITCOIND_USER="exio"
+#BITCOIND_GROUP="exio"
+
+# Path to exiod executable
+#BITCOIND_BIN="/usr/bin/exiod"
+
+# Nice value to run exiod under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
