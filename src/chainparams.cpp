@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0000050aba23dbddb377a4a5c599b0c75abc4ca497d7f4df53b87fe4f1555efc"));
+    (0, uint256("d934cdcc30dcf8095bda6a4c0ef2836579d40bb2ee04fae6e85f9309202fdd76"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -151,8 +151,8 @@ public:
         genesis.nNonce = 681192;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000050aba23dbddb377a4a5c599b0c75abc4ca497d7f4df53b87fe4f1555efc"));
-        assert(genesis.hashMerkleRoot == uint256("0x39fcd6c14e5a06fe286fb3923d188da1171b1b6afcf5b5689ae41e50125ef66a"));
+        assert(hashGenesisBlock == uint256("0xd934cdcc30dcf8095bda6a4c0ef2836579d40bb2ee04fae6e85f9309202fdd76"));
+        assert(genesis.hashMerkleRoot == uint256("0x8b7650845854f3d475ec58e0b46c07feb60508218c97462320c3d9ffa229fbf8"));
 
         vFixedSeeds.clear();
         vSeeds.push_back(CDNSSeedData("116.203.107.180", "116.203.107.180")); // Primary DNS Seeder Nodes
@@ -252,7 +252,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x08060eb13c4963628365bcbd0f586200e0dc01302f2f9d4dbdd0e0ff2bca1857"));
+        assert(hashGenesisBlock == uint256("0x25501d78f44fef7f374539c8056bf0de260c526c1b5fb134b0ccca924164be94"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -321,8 +321,7 @@ public:
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 31476;
 
-        assert(hashGenesisBlock == uint256("0x58cbabf27f19ac58cb7bcd2558ed741a33d5da247ce6e21cf6a33a4787746031"));
-	
+        assert(hashGenesisBlock == uint256("0x924d4024a3bbdf968748b72ad5d87226e95a2e520345f82892f1d95e4aef6e4c"));
 	
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
